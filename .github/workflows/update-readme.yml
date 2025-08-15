@@ -1,8 +1,11 @@
 name: Update README
 
+permissions:
+  contents: write
+  
 on:
   schedule:
-    - cron: "0 0 * * 0" # Atualiza todo domingo
+    - cron: "0 0 1 1 *" # Rodar às 00:00 do dia 1 de janeiro, todo ano
   workflow_dispatch:
 
 jobs:
