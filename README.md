@@ -3,7 +3,7 @@
 **Tech Lead | Arquiteto de Soluções | Especialista Backend**  
 Osasco, São Paulo, Brasil 🇧🇷  
 
-💻 **{{years_experience}} anos de experiência**, atuando de desenvolvedor a **Tech Lead** e **Arquiteto de Soluções**.  
+💻 **20 anos de experiência**, atuando de desenvolvedor a **Tech Lead** e **Arquiteto de Soluções**.  
 🚀 Especialista em **Java (Spring Boot)**, **microsserviços**, **soluções em nuvem** e **integração corporativa** para projetos de grande porte nos setores bancário, seguros e utilities.  
 
 ---
