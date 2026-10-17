@@ -38,10 +38,7 @@ jobs:
 
           echo "Calculated years of experience: $YEARS"
 
-          # 1. Se existir placeholder solto sem marcadores, converte para marcadores HTML
-          sed -i -E "s/(\{experience-years\}|\{\{years_experience\}\})/<!--experience-years-->${YEARS}<!--\/experience-years-->/g" README.md
-
-          # 2. Atualiza o conteúdo dentro dos marcadores preservando as tags invisíveis
+          # Atualiza o conteúdo dentro dos marcadores preservando as tags invisíveis
           sed -i -E "s/<!--experience-years-->.*<!--\/experience-years-->/<!--experience-years-->${YEARS}<!--\/experience-years-->/g" README.md
 
       - name: Update last updated date
@@ -52,7 +49,7 @@ jobs:
           echo "Updating last updated date to: $DATE"
           
           # Atualiza a data de última atualização no README.md
-          sed -i -E "s/<!--LAST_UPDATED-->.*<!--LAST_UPDATED-->/<!--LAST_UPDATED-->$DATE<!--LAST_UPDATED-->/" README.md
+          sed -i -E "s/<!--LAST_UPDATED-->.*<!--LAST_UPDATED-->/<!--LAST_UPDATED-->$DATE<!--LAST_UPDATED-->/g" README.md
 
       - name: Commit changes
         run: |
