@@ -48,11 +48,11 @@ jobs:
 
           echo "Updating last updated date to: $DATE"
           
-          # Atualiza a data de última atualização no README.md
-          sed -i -E "s/<!--LAST_UPDATED-->.*<!--LAST_UPDATED-->/<!--LAST_UPDATED-->$DATE<!--LAST_UPDATED-->/g" README.md
+          # Atualiza a data de última atualização no README.md (usando # como delimitador devido às barras na data)
+          sed -i -E "s#<!--LAST_UPDATED-->.*<!--LAST_UPDATED-->#<!--LAST_UPDATED-->${DATE}<!--LAST_UPDATED-->#g" README.md
 
       - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git diff --quiet README.md || (git commit -m "Update years of experience" README.md && git push)
+          git diff --quiet README.md || (git commit -m "Update README (experience & last updated)" README.md && git push)
