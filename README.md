@@ -3,7 +3,7 @@
 **Arquiteto de Soluções | Especialista Backend**  
 Osasco, São Paulo, Brasil 🇧🇷  
 
-💻 **<!--experience-years-->{experience-years}<!--/experience-years--> anos de experiência**, atuando de desenvolvedor a **Tech Lead** e **Arquiteto de Soluções**.  
+💻 **<!--experience-years-->21<!--/experience-years--> anos de experiência**, atuando de desenvolvedor a **Tech Lead** e **Arquiteto de Soluções**.  
 🚀 Especialista em **Java (Spring Boot)**, **microsserviços**, **soluções em nuvem** e **integração corporativa** para projetos de grande porte nos setores bancário, seguros e utilities.  
 
 ---
