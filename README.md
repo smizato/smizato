@@ -96,5 +96,5 @@ LinkedIn [(linkedin.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fw
 
 ---
 
-<small>*Última atualização: <!--LAST_UPDATED-->17/10/2026 15:59:08<!--LAST_UPDATED-->*
+<small>*Última atualização: <!--LAST_UPDATED-->17-10-2026 16:18:14<!--LAST_UPDATED-->*
 
