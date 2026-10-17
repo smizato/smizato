@@ -44,12 +44,12 @@ jobs:
       - name: Update last updated date
         run: |
           export TZ="America/Sao_Paulo"
-          DATE=$(date +"%d/%m/%Y %H:%M:%S")
+          DATE=$(date +"%d-%m-%Y %H:%M:%S")
 
           echo "Updating last updated date to: $DATE"
           
-          # Atualiza a data de última atualização no README.md (usando # como delimitador devido às barras na data)
-          sed -i -E "s#<!--LAST_UPDATED-->.*<!--LAST_UPDATED-->#<!--LAST_UPDATED-->${DATE}<!--LAST_UPDATED-->#g" README.md
+          # Atualiza a data de última atualização no README.md
+          sed -i -E "s/<!--LAST_UPDATED-->.*<!--LAST_UPDATED-->/<!--LAST_UPDATED-->${DATE}<!--LAST_UPDATED-->/" README.md
 
       - name: Commit changes
         run: |
