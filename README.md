@@ -35,4 +35,4 @@ Osasco, São Paulo, Brasil 🇧🇷
 
 ---
 
-<small>*Última atualização: <!--LAST_UPDATED-->17/10/2026 15:59:08<!--LAST_UPDATED-->*</small>
+<small>*Última atualização: <!--LAST_UPDATED-->17-10-2026 16:00:52<!--LAST_UPDATED-->*</small>
