@@ -58,13 +58,13 @@ Sou Arquiteto de Soluções com trajetória sólida em **Java (Spring Boot)**, *
 
 ```mermaid
 graph TD
-    A[2005 — Início como Desenvolvedor (Clipper / VB / Delphi / PHP)]
-    B[2007 — Sistemas corporativos e integrações]
-    C[2009 — Analista Sênior / Desenvolvedor de sistemas (COBOL /IMS /CICS / Java ) em projetos de grande porte em bancos]
-    D[2012 — Gerente de projetos na IBM em projetos na área de seguros]
-    E[2014 — Analista Sênior / Analista de Negócios em projetos de grande prote em bancos]
-    F[2022 — Aalista Sênior / Tech Lead — cloud & microsserviços]
-    G[2026 — Arquiteto de Soluções em projetos de grande porte, plataforma digital, Clouds Azure e AWS, integração com  sistemas Mainframe]
+    A["2005 — Início como Desenvolvedor (Clipper / VB / Delphi / PHP)"]
+    B["2007 — Sistemas corporativos e integrações"]
+    C["2009 — Analista Sênior / Desenvolvedor de sistemas (COBOL / IMS / CICS / Java) em projetos de grande porte em bancos"]
+    D["2012 — Gerente de projetos na IBM em projetos na área de seguros"]
+    E["2014 — Analista Sênior / Analista de Negócios em projetos de grande porte em bancos"]
+    F["2022 — Analista Sênior / Tech Lead — cloud & microsserviços"]
+    G["2026 — Arquiteto de Soluções em projetos de grande porte, plataforma digital, Clouds Azure e AWS, integração com sistemas Mainframe"]
 
     A --> B --> C --> D --> E --> F --> G
 ```
@@ -92,7 +92,8 @@ graph TD
 
 # 🌐 Conecte-se
 
-LinkedIn [(linkedin.com in Bing)](https://www.bing.com/search?q="https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsamuel-mizato")
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/samuel-mizato)
 
 ---
 
