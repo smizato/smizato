@@ -85,9 +85,8 @@ graph TD
 
 # 📊 Estatísticas do GitHub
 
-`https://github-readme-stats.vercel.app/api?username=smizato&show_icons=true&theme=dracula`  
-`https://github-readme-stats.vercel.app/api/top-langs/?username=smizato&layout=compact&theme=dracula`
-
+![Samuel's GitHub stats](https://github-readme-stats.vercel.app/api?username=smizato&show_icons=true&theme=dracula)  
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=smizato&layout=compact&theme=dracula) 
 ---
 
 # 🌐 Conecte-se
