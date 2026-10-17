@@ -2,31 +2,50 @@ name: Update README
 
 permissions:
   contents: write
-  
+
 on:
   schedule:
-    - cron: "0 0 1 1 *" # Rodar às 00:00 do dia 1 de janeiro, todo ano
+    - cron: "0 0 1 * *" # Rodar às 00:00 do dia 1 de cada mês
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'README.md'
+      - '.github/workflows/update-readme.yml'
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
+
       - name: Update years of experience
         run: |
           START_YEAR=2005
           START_MONTH=5
           NOW_YEAR=$(date +%Y)
           NOW_MONTH=$(date +%m)
+
+          # Remove zeros à esquerda caso existam
+          NOW_YEAR=$((10#$NOW_YEAR))
+          NOW_MONTH=$((10#$NOW_MONTH))
+
           YEARS=$((NOW_YEAR - START_YEAR))
           if [ "$NOW_MONTH" -lt "$START_MONTH" ]; then
             YEARS=$((YEARS - 1))
           fi
-          sed -i "s/{{years_experience}}/${YEARS}/g" README.md
+
+          echo "Calculated years of experience: $YEARS"
+
+          # 1. Se existir placeholder solto sem marcadores, converte para marcadores HTML
+          sed -i -E "s/(\{experience-years\}|\{\{years_experience\}\})/<!--experience-years-->${YEARS}<!--\/experience-years-->/g" README.md
+
+          # 2. Atualiza o conteúdo dentro dos marcadores preservando as tags invisíveis
+          sed -i -E "s/<!--experience-years-->.*<!--\/experience-years-->/<!--experience-years-->${YEARS}<!--\/experience-years-->/g" README.md
+
       - name: Commit changes
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git commit -am "Update years of experience"
-          git push
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git diff --quiet README.md || (git commit -m "Update years of experience" README.md && git push)
