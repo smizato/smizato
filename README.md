@@ -96,5 +96,5 @@ graph TD
 
 ---
 
-<small>*Última atualização: <!--LAST_UPDATED-->17-10-2026 16:33:23<!--LAST_UPDATED-->*
+<small>*Última atualização: <!--LAST_UPDATED-->01-11-2026 01:14:39<!--LAST_UPDATED-->*
 
